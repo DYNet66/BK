@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<!-- saved from url=(0024)http://dynet.wonzan.com/ -->
+<html lang="zh-CN" class=""><script id="allow-copy_script">(function agent() {
+    let isUnlockingCached = false
+    const isUnlocking = () => isUnlockingCached
+    document.addEventListener('allow_copy', event => {
+      const { unlock } = event.detail
+      isUnlockingCached = unlock
+    })
+
+    const copyEvents = [
+      'copy',
+      'cut',
+      'contextmenu',
+      'selectstart',
+      'mousedown',
+      'mouseup',
+      'mousemove',
+      'keydown',
+      'keypress',
+      'keyup',
+    ]
+    const rejectOtherHandlers = e => {
+      if (isUnlocking()) {
+        e.stopPropagation()
+        if (e.stopImmediatePropagation) e.stopImmediatePropagation()
+      }
+    }
+    copyEvents.forEach(evt => {
+      document.documentElement.addEventListener(evt, rejectOtherHandlers, {
+        capture: true,
+      })
+    })
+  })()</script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="pingback" href="http://dynet.wonzan.com/xmlrpc.php">
+		<title>DYBlog – DY的窝</title>
+<link rel="dns-prefetch" href="http://cdn.jsdelivr.net/">
+<link rel="dns-prefetch" href="http://s.w.org/">
+<link rel="alternate" type="application/rss+xml" title="DYBlog » Feed" href="http://dynet.wonzan.com/feed/">
+<link rel="alternate" type="application/rss+xml" title="DYBlog » 评论Feed" href="http://dynet.wonzan.com/comments/feed/">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/dynet.wonzan.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.2.7"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="./DYBlog – DY的窝_files/wp-emoji-release.min.js.下载" type="text/javascript" defer=""></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel="stylesheet" id="dashicons-css" href="./DYBlog – DY的窝_files/dashicons.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="admin-bar-css" href="./DYBlog – DY的窝_files/admin-bar.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="wp-block-library-css" href="./DYBlog – DY的窝_files/style.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="nprogresss-css" href="./DYBlog – DY的窝_files/nprogress.css" type="text/css" media="all">
+<link rel="stylesheet" id="bootstrap-css" href="./DYBlog – DY的窝_files/bootstrap.css" type="text/css" media="all">
+<link rel="stylesheet" id="master-blog-stylesheet-css" href="./DYBlog – DY的窝_files/style.css" type="text/css" media="all">
+<link rel="stylesheet" id="font-awesome-css" href="./DYBlog – DY的窝_files/font-awesome.min.css" type="text/css" media="all">
+<script type="text/javascript" src="./DYBlog – DY的窝_files/jquery.js.下载"></script>
+<script type="text/javascript" src="./DYBlog – DY的窝_files/jquery-migrate.min.js.下载"></script>
+<script type="text/javascript" src="./DYBlog – DY的窝_files/plus_prism.js.下载" async="async"></script>
+<script type="text/javascript" async="" integrity="sha384-vO46R/Kxmvgbjw4biqvRvhYvWKUgTip1VUIPDKlCIFnuP5aUYvdLQ8aVtS9L3ZO/" crossorigin="anonymous" src="./DYBlog – DY的窝_files/notie.js.下载"></script>
+<link rel="https://api.w.org/" href="http://dynet.wonzan.com/wp-json/">
+<!--[if lt IE 10]><script src="http://dynet.wonzan.com/wp-content/plugins/wp-plus/js/iedie.min.js"></script><![endif]--><style type="text/css" media="print">#wpadminbar { display:none; }</style>
+	<style type="text/css" media="screen">
+	html { margin-top: 32px !important; }
+	* html body { margin-top: 32px !important; }
+	@media screen and ( max-width: 782px ) {
+		html { margin-top: 46px !important; }
+		* html body { margin-top: 46px !important; }
+	}
+</style>
+		<style>@font-face{font-family:"-APPLE-SYSTEM";src:local("-APPLE-SYSTEM");font-weight:400;}@font-face{font-family:"-APPLE-SYSTEM";font-weight:400;src:local("Microsoft YaHei UI"), local("Microsoft YaHei"), local("微软雅黑"), local("微軟雅黑"), local("WenQuanYi Micro Hei"), local("Droid Sans Fallback");unicode-range:U+2E80-9FFF, U+F900-FAFF, U+FE30-FE6F, U+FF00-FFEF, U+1B000-1B0FF, U+20000-2FA1F}@font-face{font-family:"-APPLE-SYSTEM";font-weight:bold;src:local("Microsoft YaHei UI"), local("Microsoft YaHei"), local("微软雅黑"), local("微軟雅黑"), local("WenQuanYi Micro Hei"), local("Droid Sans Fallback");unicode-range:U+2E80-9FFF, U+F900-FAFF, U+FE30-FE6F, U+FF00-FFEF, U+1B000-1B0FF, U+20000-2FA1F}@font-face{font-family:"SEGOE UI";src:local("SEGOE UI");font-weight:400;}@font-face{font-family:"SEGOE UI";font-weight:400;src:local("Microsoft YaHei UI"), local("Microsoft YaHei"), local("微软雅黑"), local("微軟雅黑"), local("WenQuanYi Micro Hei"), local("Droid Sans Fallback");unicode-range:U+2E80-9FFF, U+F900-FAFF, U+FE30-FE6F, U+FF00-FFEF, U+1B000-1B0FF, U+20000-2FA1F}@font-face{font-family:"SEGOE UI";font-weight:bold;src:local("Microsoft YaHei UI"), local("Microsoft YaHei"), local("微软雅黑"), local("微軟雅黑"), local("WenQuanYi Micro Hei"), local("Droid Sans Fallback");unicode-range:U+2E80-9FFF, U+F900-FAFF, U+FE30-FE6F, U+FF00-FFEF, U+1B000-1B0FF, U+20000-2FA1F}@font-face{font-family:"ROBOTO";src:local("ROBOTO");font-weight:400;}@font-face{font-family:"ROBOTO";font-weight:400;src:local("Microsoft YaHei UI"), local("Microsoft YaHei"), local("微软雅黑"), local("微軟雅黑"), local("WenQuanYi Micro Hei"), local("Droid Sans Fallback");unicode-range:U+2E80-9FFF, U+F900-FAFF, U+FE30-FE6F, U+FF00-FFEF, U+1B000-1B0FF, U+20000-2FA1F}@font-face{font-family:"ROBOTO";font-weight:bold;src:local("Microsoft YaHei UI"), local("Microsoft YaHei"), local("微软雅黑"), local("微軟雅黑"), local("WenQuanYi Micro Hei"), local("Droid Sans Fallback");unicode-range:U+2E80-9FFF, U+F900-FAFF, U+FE30-FE6F, U+FF00-FFEF, U+1B000-1B0FF, U+20000-2FA1F}@font-face{font-family:"OXYGEN-SANS";src:local("OXYGEN-SANS");font-weight:400;}@font-face{font-family:"OXYGEN-SANS";font-weight:400;src:local("Microsoft YaHei UI"), local("Microsoft YaHei"), local("微软雅黑"), local("微軟雅黑"), local("WenQuanYi Micro Hei"), local("Droid Sans Fallback");unicode-range:U+2E80-9FFF, U+F900-FAFF, U+FE30-FE6F, U+FF00-FFEF, U+1B000-1B0FF, U+20000-2FA1F}@font-face{font-family:"OXYGEN-SANS";font-weight:bold;src:local("Microsoft YaHei UI"), local("Microsoft YaHei"), local("微软雅黑"), local("微軟雅黑"), local("WenQuanYi Micro Hei"), local("Droid Sans Fallback");unicode-range:U+2E80-9FFF, U+F900-FAFF, U+FE30-FE6F, U+FF00-FFEF, U+1B000-1B0FF, U+20000-2FA1F}@font-face{font-family:"UBUNTU";src:local("UBUNTU");font-weight:400;}@font-face{font-family:"UBUNTU";font-weight:400;src:local("Microsoft YaHei UI"), local("Microsoft YaHei"), local("微软雅黑"), local("微軟雅黑"), local("WenQuanYi Micro Hei"), local("Droid Sans Fallback");unicode-range:U+2E80-9FFF, U+F900-FAFF, U+FE30-FE6F, U+FF00-FFEF, U+1B000-1B0FF, U+20000-2FA1F}@font-face{font-family:"UBUNTU";font-weight:bold;src:local("Microsoft YaHei UI"), local("Microsoft YaHei"), local("微软雅黑"), local("微軟雅黑"), local("WenQuanYi Micro Hei"), local("Droid Sans Fallback");unicode-range:U+2E80-9FFF, U+F900-FAFF, U+FE30-FE6F, U+FF00-FFEF, U+1B000-1B0FF, U+20000-2FA1F}@font-face{font-family:"CANTARELL";src:local("CANTARELL");font-weight:400;}@font-face{font-family:"CANTARELL";font-weight:400;src:local("Microsoft YaHei UI"), local("Microsoft YaHei"), local("微软雅黑"), local("微軟雅黑"), local("WenQuanYi Micro Hei"), local("Droid Sans Fallback");unicode-range:U+2E80-9FFF, U+F900-FAFF, U+FE30-FE6F, U+FF00-FFEF, U+1B000-1B0FF, U+20000-2FA1F}@font-face{font-family:"CANTARELL";font-weight:bold;src:local("Microsoft YaHei UI"), local("Microsoft YaHei"), local("微软雅黑"), local("微軟雅黑"), local("WenQuanYi Micro Hei"), local("Droid Sans Fallback");unicode-range:U+2E80-9FFF, U+F900-FAFF, U+FE30-FE6F, U+FF00-FFEF, U+1B000-1B0FF, U+20000-2FA1F}@font-face{font-family:"HELVETICA NEUE";src:local("HELVETICA NEUE");font-weight:400;}@font-face{font-family:"HELVETICA NEUE";font-weight:400;src:local("Microsoft YaHei UI"), local("Microsoft YaHei"), local("微软雅黑"), local("微軟雅黑"), local("WenQuanYi Micro Hei"), local("Droid Sans Fallback");unicode-range:U+2E80-9FFF, U+F900-FAFF, U+FE30-FE6F, U+FF00-FFEF, U+1B000-1B0FF, U+20000-2FA1F}@font-face{font-family:"HELVETICA NEUE";font-weight:bold;src:local("Microsoft YaHei UI"), local("Microsoft YaHei"), local("微软雅黑"), local("微軟雅黑"), local("WenQuanYi Micro Hei"), local("Droid Sans Fallback");unicode-range:U+2E80-9FFF, U+F900-FAFF, U+FE30-FE6F, U+FF00-FFEF, U+1B000-1B0FF, U+20000-2FA1F}@font-face{font-family:"SANS-SERIF";src:local("SANS-SERIF");font-weight:400;}@font-face{font-family:"SANS-SERIF";font-weight:400;src:local("Microsoft YaHei UI"), local("Microsoft YaHei"), local("微软雅黑"), local("微軟雅黑"), local("WenQuanYi Micro Hei"), local("Droid Sans Fallback");unicode-range:U+2E80-9FFF, U+F900-FAFF, U+FE30-FE6F, U+FF00-FFEF, U+1B000-1B0FF, U+20000-2FA1F}@font-face{font-family:"SANS-SERIF";font-weight:bold;src:local("Microsoft YaHei UI"), local("Microsoft YaHei"), local("微软雅黑"), local("微軟雅黑"), local("WenQuanYi Micro Hei"), local("Droid Sans Fallback");unicode-range:U+2E80-9FFF, U+F900-FAFF, U+FE30-FE6F, U+FF00-FFEF, U+1B000-1B0FF, U+20000-2FA1F}@font-face{font-family:"OPEN SANS";src:local("OPEN SANS");font-weight:300;}@font-face{font-family:"OPEN SANS";font-weight:300;src:local("Microsoft YaHei UI"), local("Microsoft YaHei"), local("微软雅黑"), local("微軟雅黑"), local("WenQuanYi Micro Hei"), local("Droid Sans Fallback");unicode-range:U+2E80-9FFF, U+F900-FAFF, U+FE30-FE6F, U+FF00-FFEF, U+1B000-1B0FF, U+20000-2FA1F}@font-face{font-family:"OPEN SANS";font-weight:bold;src:local("Microsoft YaHei UI"), local("Microsoft YaHei"), local("微软雅黑"), local("微軟雅黑"), local("WenQuanYi Micro Hei"), local("Droid Sans Fallback");unicode-range:U+2E80-9FFF, U+F900-FAFF, U+FE30-FE6F, U+FF00-FFEF, U+1B000-1B0FF, U+20000-2FA1F}@font-face{font-family:"HELVETICA NEUE";src:local("HELVETICA NEUE");font-weight:300;}@font-face{font-family:"HELVETICA NEUE";font-weight:300;src:local("Microsoft YaHei UI"), local("Microsoft YaHei"), local("微软雅黑"), local("微軟雅黑"), local("WenQuanYi Micro Hei"), local("Droid Sans Fallback");unicode-range:U+2E80-9FFF, U+F900-FAFF, U+FE30-FE6F, U+FF00-FFEF, U+1B000-1B0FF, U+20000-2FA1F}@font-face{font-family:"HELVETICA NEUE";font-weight:bold;src:local("Microsoft YaHei UI"), local("Microsoft YaHei"), local("微软雅黑"), local("微軟雅黑"), local("WenQuanYi Micro Hei"), local("Droid Sans Fallback");unicode-range:U+2E80-9FFF, U+F900-FAFF, U+FE30-FE6F, U+FF00-FFEF, U+1B000-1B0FF, U+20000-2FA1F}@font-face{font-family:"HELVETICA";src:local("HELVETICA");font-weight:300;}@font-face{font-family:"HELVETICA";font-weight:300;src:local("Microsoft YaHei UI"), local("Microsoft YaHei"), local("微软雅黑"), local("微軟雅黑"), local("WenQuanYi Micro Hei"), local("Droid Sans Fallback");unicode-range:U+2E80-9FFF, U+F900-FAFF, U+FE30-FE6F, U+FF00-FFEF, U+1B000-1B0FF, U+20000-2FA1F}@font-face{font-family:"HELVETICA";font-weight:bold;src:local("Microsoft YaHei UI"), local("Microsoft YaHei"), local("微软雅黑"), local("微軟雅黑"), local("WenQuanYi Micro Hei"), local("Droid Sans Fallback");unicode-range:U+2E80-9FFF, U+F900-FAFF, U+FE30-FE6F, U+FF00-FFEF, U+1B000-1B0FF, U+20000-2FA1F}@font-face{font-family:"ARIAL";src:local("ARIAL");font-weight:300;}@font-face{font-family:"ARIAL";font-weight:300;src:local("Microsoft YaHei UI"), local("Microsoft YaHei"), local("微软雅黑"), local("微軟雅黑"), local("WenQuanYi Micro Hei"), local("Droid Sans Fallback");unicode-range:U+2E80-9FFF, U+F900-FAFF, U+FE30-FE6F, U+FF00-FFEF, U+1B000-1B0FF, U+20000-2FA1F}@font-face{font-family:"ARIAL";font-weight:bold;src:local("Microsoft YaHei UI"), local("Microsoft YaHei"), local("微软雅黑"), local("微軟雅黑"), local("WenQuanYi Micro Hei"), local("Droid Sans Fallback");unicode-range:U+2E80-9FFF, U+F900-FAFF, U+FE30-FE6F, U+FF00-FFEF, U+1B000-1B0FF, U+20000-2FA1F}@font-face{font-family:"SANS-SERIF";src:local("SANS-SERIF");font-weight:300;}@font-face{font-family:"SANS-SERIF";font-weight:300;src:local("Microsoft YaHei UI"), local("Microsoft YaHei"), local("微软雅黑"), local("微軟雅黑"), local("WenQuanYi Micro Hei"), local("Droid Sans Fallback");unicode-range:U+2E80-9FFF, U+F900-FAFF, U+FE30-FE6F, U+FF00-FFEF, U+1B000-1B0FF, U+20000-2FA1F}@font-face{font-family:"SANS-SERIF";font-weight:bold;src:local("Microsoft YaHei UI"), local("Microsoft YaHei"), local("微软雅黑"), local("微軟雅黑"), local("WenQuanYi Micro Hei"), local("Droid Sans Fallback");unicode-range:U+2E80-9FFF, U+F900-FAFF, U+FE30-FE6F, U+FF00-FFEF, U+1B000-1B0FF, U+20000-2FA1F}@font-face{font-family:"TAHOMA";src:local("TAHOMA");font-weight:400;}@font-face{font-family:"TAHOMA";font-weight:400;src:local("Microsoft YaHei UI"), local("Microsoft YaHei"), local("微软雅黑"), local("微軟雅黑"), local("WenQuanYi Micro Hei"), local("Droid Sans Fallback");unicode-range:U+2E80-9FFF, U+F900-FAFF, U+FE30-FE6F, U+FF00-FFEF, U+1B000-1B0FF, U+20000-2FA1F}@font-face{font-family:"TAHOMA";font-weight:bold;src:local("Microsoft YaHei UI"), local("Microsoft YaHei"), local("微软雅黑"), local("微軟雅黑"), local("WenQuanYi Micro Hei"), local("Droid Sans Fallback");unicode-range:U+2E80-9FFF, U+F900-FAFF, U+FE30-FE6F, U+FF00-FFEF, U+1B000-1B0FF, U+20000-2FA1F}@font-face{font-family:"ARIAL";src:local("ARIAL");font-weight:400;}@font-face{font-family:"ARIAL";font-weight:400;src:local("Microsoft YaHei UI"), local("Microsoft YaHei"), local("微软雅黑"), local("微軟雅黑"), local("WenQuanYi Micro Hei"), local("Droid Sans Fallback");unicode-range:U+2E80-9FFF, U+F900-FAFF, U+FE30-FE6F, U+FF00-FFEF, U+1B000-1B0FF, U+20000-2FA1F}@font-face{font-family:"ARIAL";font-weight:bold;src:local("Microsoft YaHei UI"), local("Microsoft YaHei"), local("微软雅黑"), local("微軟雅黑"), local("WenQuanYi Micro Hei"), local("Droid Sans Fallback");unicode-range:U+2E80-9FFF, U+F900-FAFF, U+FE30-FE6F, U+FF00-FFEF, U+1B000-1B0FF, U+20000-2FA1F}@font-face{font-family:"SERIF";src:local("SERIF");font-weight:400;}@font-face{font-family:"SERIF";font-weight:400;src:local("Microsoft YaHei UI"), local("Microsoft YaHei"), local("微软雅黑"), local("微軟雅黑"), local("WenQuanYi Micro Hei"), local("Droid Sans Fallback");unicode-range:U+2E80-9FFF, U+F900-FAFF, U+FE30-FE6F, U+FF00-FFEF, U+1B000-1B0FF, U+20000-2FA1F}@font-face{font-family:"SERIF";font-weight:bold;src:local("Microsoft YaHei UI"), local("Microsoft YaHei"), local("微软雅黑"), local("微軟雅黑"), local("WenQuanYi Micro Hei"), local("Droid Sans Fallback");unicode-range:U+2E80-9FFF, U+F900-FAFF, U+FE30-FE6F, U+FF00-FFEF, U+1B000-1B0FF, U+20000-2FA1F}@font-face{font-family:"INHERIT";src:local("INHERIT");font-weight:400;}@font-face{font-family:"INHERIT";font-weight:400;src:local("Microsoft YaHei UI"), local("Microsoft YaHei"), local("微软雅黑"), local("微軟雅黑"), local("WenQuanYi Micro Hei"), local("Droid Sans Fallback");unicode-range:U+2E80-9FFF, U+F900-FAFF, U+FE30-FE6F, U+FF00-FFEF, U+1B000-1B0FF, U+20000-2FA1F}@font-face{font-family:"INHERIT";font-weight:bold;src:local("Microsoft YaHei UI"), local("Microsoft YaHei"), local("微软雅黑"), local("微軟雅黑"), local("WenQuanYi Micro Hei"), local("Droid Sans Fallback");unicode-range:U+2E80-9FFF, U+F900-FAFF, U+FE30-FE6F, U+FF00-FFEF, U+1B000-1B0FF, U+20000-2FA1F}@font-face{font-family:"HELVETICA";src:local("HELVETICA");font-weight:400;}@font-face{font-family:"HELVETICA";font-weight:400;src:local("Microsoft YaHei UI"), local("Microsoft YaHei"), local("微软雅黑"), local("微軟雅黑"), local("WenQuanYi Micro Hei"), local("Droid Sans Fallback");unicode-range:U+2E80-9FFF, U+F900-FAFF, U+FE30-FE6F, U+FF00-FFEF, U+1B000-1B0FF, U+20000-2FA1F}@font-face{font-family:"HELVETICA";font-weight:bold;src:local("Microsoft YaHei UI"), local("Microsoft YaHei"), local("微软雅黑"), local("微軟雅黑"), local("WenQuanYi Micro Hei"), local("Droid Sans Fallback");unicode-range:U+2E80-9FFF, U+F900-FAFF, U+FE30-FE6F, U+FF00-FFEF, U+1B000-1B0FF, U+20000-2FA1F}@font-face{font-family:"INHERIT";src:local("INHERIT");font-weight:500;}@font-face{font-family:"INHERIT";font-weight:500;src:local("Microsoft YaHei UI"), local("Microsoft YaHei"), local("微软雅黑"), local("微軟雅黑"), local("WenQuanYi Micro Hei"), local("Droid Sans Fallback");unicode-range:U+2E80-9FFF, U+F900-FAFF, U+FE30-FE6F, U+FF00-FFEF, U+1B000-1B0FF, U+20000-2FA1F}@font-face{font-family:"INHERIT";font-weight:bold;src:local("Microsoft YaHei UI"), local("Microsoft YaHei"), local("微软雅黑"), local("微軟雅黑"), local("WenQuanYi Micro Hei"), local("Droid Sans Fallback");unicode-range:U+2E80-9FFF, U+F900-FAFF, U+FE30-FE6F, U+FF00-FFEF, U+1B000-1B0FF, U+20000-2FA1F}@font-face{font-family:"A";src:local("A");font-weight:400;}@font-face{font-family:"A";font-weight:400;src:local("Microsoft YaHei UI"), local("Microsoft YaHei"), local("微软雅黑"), local("微軟雅黑"), local("WenQuanYi Micro Hei"), local("Droid Sans Fallback");unicode-range:U+2E80-9FFF, U+F900-FAFF, U+FE30-FE6F, U+FF00-FFEF, U+1B000-1B0FF, U+20000-2FA1F}@font-face{font-family:"A";font-weight:bold;src:local("Microsoft YaHei UI"), local("Microsoft YaHei"), local("微软雅黑"), local("微軟雅黑"), local("WenQuanYi Micro Hei"), local("Droid Sans Fallback");unicode-range:U+2E80-9FFF, U+F900-FAFF, U+FE30-FE6F, U+FF00-FFEF, U+1B000-1B0FF, U+20000-2FA1F}@font-face{font-family:"-APPLE-SYSTEM";src:local("-APPLE-SYSTEM");font-weight:700;}@font-face{font-family:"-APPLE-SYSTEM";font-weight:700;src:local("Microsoft YaHei UI"), local("Microsoft YaHei"), local("微软雅黑"), local("微軟雅黑"), local("WenQuanYi Micro Hei"), local("Droid Sans Fallback");unicode-range:U+2E80-9FFF, U+F900-FAFF, U+FE30-FE6F, U+FF00-FFEF, U+1B000-1B0FF, U+20000-2FA1F}@font-face{font-family:"-APPLE-SYSTEM";font-weight:bold;src:local("Microsoft YaHei UI"), local("Microsoft YaHei"), local("微软雅黑"), local("微軟雅黑"), local("WenQuanYi Micro Hei"), local("Droid Sans Fallback");unicode-range:U+2E80-9FFF, U+F900-FAFF, U+FE30-FE6F, U+FF00-FFEF, U+1B000-1B0FF, U+20000-2FA1F}@font-face{font-family:"SEGOE UI";src:local("SEGOE UI");font-weight:700;}@font-face{font-family:"SEGOE UI";font-weight:700;src:local("Microsoft YaHei UI"), local("Microsoft YaHei"), local("微软雅黑"), local("微軟雅黑"), local("WenQuanYi Micro Hei"), local("Droid Sans Fallback");unicode-range:U+2E80-9FFF, U+F900-FAFF, U+FE30-FE6F, U+FF00-FFEF, U+1B000-1B0FF, U+20000-2FA1F}@font-face{font-family:"SEGOE UI";font-weight:bold;src:local("Microsoft YaHei UI"), local("Microsoft YaHei"), local("微软雅黑"), local("微軟雅黑"), local("WenQuanYi Micro Hei"), local("Droid Sans Fallback");unicode-range:U+2E80-9FFF, U+F900-FAFF, U+FE30-FE6F, U+FF00-FFEF, U+1B000-1B0FF, U+20000-2FA1F}@font-face{font-family:"ROBOTO";src:local("ROBOTO");font-weight:700;}@font-face{font-family:"ROBOTO";font-weight:700;src:local("Microsoft YaHei UI"), local("Microsoft YaHei"), local("微软雅黑"), local("微軟雅黑"), local("WenQuanYi Micro Hei"), local("Droid Sans Fallback");unicode-range:U+2E80-9FFF, U+F900-FAFF, U+FE30-FE6F, U+FF00-FFEF, U+1B000-1B0FF, U+20000-2FA1F}@font-face{font-family:"ROBOTO";font-weight:bold;src:local("Microsoft YaHei UI"), local("Microsoft YaHei"), local("微软雅黑"), local("微軟雅黑"), local("WenQuanYi Micro Hei"), local("Droid Sans Fallback");unicode-range:U+2E80-9FFF, U+F900-FAFF, U+FE30-FE6F, U+FF00-FFEF, U+1B000-1B0FF, U+20000-2FA1F}@font-face{font-family:"OXYGEN-SANS";src:local("OXYGEN-SANS");font-weight:700;}@font-face{font-family:"OXYGEN-SANS";font-weight:700;src:local("Microsoft YaHei UI"), local("Microsoft YaHei"), local("微软雅黑"), local("微軟雅黑"), local("WenQuanYi Micro Hei"), local("Droid Sans Fallback");unicode-range:U+2E80-9FFF, U+F900-FAFF, U+FE30-FE6F, U+FF00-FFEF, U+1B000-1B0FF, U+20000-2FA1F}@font-face{font-family:"OXYGEN-SANS";font-weight:bold;src:local("Microsoft YaHei UI"), local("Microsoft YaHei"), local("微软雅黑"), local("微軟雅黑"), local("WenQuanYi Micro Hei"), local("Droid Sans Fallback");unicode-range:U+2E80-9FFF, U+F900-FAFF, U+FE30-FE6F, U+FF00-FFEF, U+1B000-1B0FF, U+20000-2FA1F}@font-face{font-family:"UBUNTU";src:local("UBUNTU");font-weight:700;}@font-face{font-family:"UBUNTU";font-weight:700;src:local("Microsoft YaHei UI"), local("Microsoft YaHei"), local("微软雅黑"), local("微軟雅黑"), local("WenQuanYi Micro Hei"), local("Droid Sans Fallback");unicode-range:U+2E80-9FFF, U+F900-FAFF, U+FE30-FE6F, U+FF00-FFEF, U+1B000-1B0FF, U+20000-2FA1F}@font-face{font-family:"UBUNTU";font-weight:bold;src:local("Microsoft YaHei UI"), local("Microsoft YaHei"), local("微软雅黑"), local("微軟雅黑"), local("WenQuanYi Micro Hei"), local("Droid Sans Fallback");unicode-range:U+2E80-9FFF, U+F900-FAFF, U+FE30-FE6F, U+FF00-FFEF, U+1B000-1B0FF, U+20000-2FA1F}@font-face{font-family:"CANTARELL";src:local("CANTARELL");font-weight:700;}@font-face{font-family:"CANTARELL";font-weight:700;src:local("Microsoft YaHei UI"), local("Microsoft YaHei"), local("微软雅黑"), local("微軟雅黑"), local("WenQuanYi Micro Hei"), local("Droid Sans Fallback");unicode-range:U+2E80-9FFF, U+F900-FAFF, U+FE30-FE6F, U+FF00-FFEF, U+1B000-1B0FF, U+20000-2FA1F}@font-face{font-family:"CANTARELL";font-weight:bold;src:local("Microsoft YaHei UI"), local("Microsoft YaHei"), local("微软雅黑"), local("微軟雅黑"), local("WenQuanYi Micro Hei"), local("Droid Sans Fallback");unicode-range:U+2E80-9FFF, U+F900-FAFF, U+FE30-FE6F, U+FF00-FFEF, U+1B000-1B0FF, U+20000-2FA1F}@font-face{font-family:"HELVETICA NEUE";src:local("HELVETICA NEUE");font-weight:700;}@font-face{font-family:"HELVETICA NEUE";font-weight:700;src:local("Microsoft YaHei UI"), local("Microsoft YaHei"), local("微软雅黑"), local("微軟雅黑"), local("WenQuanYi Micro Hei"), local("Droid Sans Fallback");unicode-range:U+2E80-9FFF, U+F900-FAFF, U+FE30-FE6F, U+FF00-FFEF, U+1B000-1B0FF, U+20000-2FA1F}@font-face{font-family:"HELVETICA NEUE";font-weight:bold;src:local("Microsoft YaHei UI"), local("Microsoft YaHei"), local("微软雅黑"), local("微軟雅黑"), local("WenQuanYi Micro Hei"), local("Droid Sans Fallback");unicode-range:U+2E80-9FFF, U+F900-FAFF, U+FE30-FE6F, U+FF00-FFEF, U+1B000-1B0FF, U+20000-2FA1F}@font-face{font-family:"SANS-SERIF";src:local("SANS-SERIF");font-weight:700;}@font-face{font-family:"SANS-SERIF";font-weight:700;src:local("Microsoft YaHei UI"), local("Microsoft YaHei"), local("微软雅黑"), local("微軟雅黑"), local("WenQuanYi Micro Hei"), local("Droid Sans Fallback");unicode-range:U+2E80-9FFF, U+F900-FAFF, U+FE30-FE6F, U+FF00-FFEF, U+1B000-1B0FF, U+20000-2FA1F}@font-face{font-family:"SANS-SERIF";font-weight:bold;src:local("Microsoft YaHei UI"), local("Microsoft YaHei"), local("微软雅黑"), local("微軟雅黑"), local("WenQuanYi Micro Hei"), local("Droid Sans Fallback");unicode-range:U+2E80-9FFF, U+F900-FAFF, U+FE30-FE6F, U+FF00-FFEF, U+1B000-1B0FF, U+20000-2FA1F}@font-face{font-family:"OPEN SANS";src:local("OPEN SANS");font-weight:700;}@font-face{font-family:"OPEN SANS";font-weight:700;src:local("Microsoft YaHei UI"), local("Microsoft YaHei"), local("微软雅黑"), local("微軟雅黑"), local("WenQuanYi Micro Hei"), local("Droid Sans Fallback");unicode-range:U+2E80-9FFF, U+F900-FAFF, U+FE30-FE6F, U+FF00-FFEF, U+1B000-1B0FF, U+20000-2FA1F}@font-face{font-family:"OPEN SANS";font-weight:bold;src:local("Microsoft YaHei UI"), local("Microsoft YaHei"), local("微软雅黑"), local("微軟雅黑"), local("WenQuanYi Micro Hei"), local("Droid Sans Fallback");unicode-range:U+2E80-9FFF, U+F900-FAFF, U+FE30-FE6F, U+FF00-FFEF, U+1B000-1B0FF, U+20000-2FA1F}@font-face{font-family:"HELVETICA";src:local("HELVETICA");font-weight:700;}@font-face{font-family:"HELVETICA";font-weight:700;src:local("Microsoft YaHei UI"), local("Microsoft YaHei"), local("微软雅黑"), local("微軟雅黑"), local("WenQuanYi Micro Hei"), local("Droid Sans Fallback");unicode-range:U+2E80-9FFF, U+F900-FAFF, U+FE30-FE6F, U+FF00-FFEF, U+1B000-1B0FF, U+20000-2FA1F}@font-face{font-family:"HELVETICA";font-weight:bold;src:local("Microsoft YaHei UI"), local("Microsoft YaHei"), local("微软雅黑"), local("微軟雅黑"), local("WenQuanYi Micro Hei"), local("Droid Sans Fallback");unicode-range:U+2E80-9FFF, U+F900-FAFF, U+FE30-FE6F, U+FF00-FFEF, U+1B000-1B0FF, U+20000-2FA1F}@font-face{font-family:"ARIAL";src:local("ARIAL");font-weight:700;}@font-face{font-family:"ARIAL";font-weight:700;src:local("Microsoft YaHei UI"), local("Microsoft YaHei"), local("微软雅黑"), local("微軟雅黑"), local("WenQuanYi Micro Hei"), local("Droid Sans Fallback");unicode-range:U+2E80-9FFF, U+F900-FAFF, U+FE30-FE6F, U+FF00-FFEF, U+1B000-1B0FF, U+20000-2FA1F}@font-face{font-family:"ARIAL";font-weight:bold;src:local("Microsoft YaHei UI"), local("Microsoft YaHei"), local("微软雅黑"), local("微軟雅黑"), local("WenQuanYi Micro Hei"), local("Droid Sans Fallback");unicode-range:U+2E80-9FFF, U+F900-FAFF, U+FE30-FE6F, U+FF00-FFEF, U+1B000-1B0FF, U+20000-2FA1F}@font-face{font-family:"TAHOMA";src:local("TAHOMA");font-weight:700;}@font-face{font-family:"TAHOMA";font-weight:700;src:local("Microsoft YaHei UI"), local("Microsoft YaHei"), local("微软雅黑"), local("微軟雅黑"), local("WenQuanYi Micro Hei"), local("Droid Sans Fallback");unicode-range:U+2E80-9FFF, U+F900-FAFF, U+FE30-FE6F, U+FF00-FFEF, U+1B000-1B0FF, U+20000-2FA1F}@font-face{font-family:"TAHOMA";font-weight:bold;src:local("Microsoft YaHei UI"), local("Microsoft YaHei"), local("微软雅黑"), local("微軟雅黑"), local("WenQuanYi Micro Hei"), local("Droid Sans Fallback");unicode-range:U+2E80-9FFF, U+F900-FAFF, U+FE30-FE6F, U+FF00-FFEF, U+1B000-1B0FF, U+20000-2FA1F}@font-face{font-family:"SERIF";src:local("SERIF");font-weight:700;}@font-face{font-family:"SERIF";font-weight:700;src:local("Microsoft YaHei UI"), local("Microsoft YaHei"), local("微软雅黑"), local("微軟雅黑"), local("WenQuanYi Micro Hei"), local("Droid Sans Fallback");unicode-range:U+2E80-9FFF, U+F900-FAFF, U+FE30-FE6F, U+FF00-FFEF, U+1B000-1B0FF, U+20000-2FA1F}@font-face{font-family:"SERIF";font-weight:bold;src:local("Microsoft YaHei UI"), local("Microsoft YaHei"), local("微软雅黑"), local("微軟雅黑"), local("WenQuanYi Micro Hei"), local("Droid Sans Fallback");unicode-range:U+2E80-9FFF, U+F900-FAFF, U+FE30-FE6F, U+FF00-FFEF, U+1B000-1B0FF, U+20000-2FA1F}@font-face{font-family:"INHERIT";src:local("INHERIT");font-weight:700;}@font-face{font-family:"INHERIT";font-weight:700;src:local("Microsoft YaHei UI"), local("Microsoft YaHei"), local("微软雅黑"), local("微軟雅黑"), local("WenQuanYi Micro Hei"), local("Droid Sans Fallback");unicode-range:U+2E80-9FFF, U+F900-FAFF, U+FE30-FE6F, U+FF00-FFEF, U+1B000-1B0FF, U+20000-2FA1F}@font-face{font-family:"INHERIT";font-weight:bold;src:local("Microsoft YaHei UI"), local("Microsoft YaHei"), local("微软雅黑"), local("微軟雅黑"), local("WenQuanYi Micro Hei"), local("Droid Sans Fallback");unicode-range:U+2E80-9FFF, U+F900-FAFF, U+FE30-FE6F, U+FF00-FFEF, U+1B000-1B0FF, U+20000-2FA1F}@font-face{font-family:"A";src:local("A");font-weight:700;}@font-face{font-family:"A";font-weight:700;src:local("Microsoft YaHei UI"), local("Microsoft YaHei"), local("微软雅黑"), local("微軟雅黑"), local("WenQuanYi Micro Hei"), local("Droid Sans Fallback");unicode-range:U+2E80-9FFF, U+F900-FAFF, U+FE30-FE6F, U+FF00-FFEF, U+1B000-1B0FF, U+20000-2FA1F}@font-face{font-family:"A";font-weight:bold;src:local("Microsoft YaHei UI"), local("Microsoft YaHei"), local("微软雅黑"), local("微軟雅黑"), local("WenQuanYi Micro Hei"), local("Droid Sans Fallback");unicode-range:U+2E80-9FFF, U+F900-FAFF, U+FE30-FE6F, U+FF00-FFEF, U+1B000-1B0FF, U+20000-2FA1F}</style><script charset="utf-8" src="chrome-extension://jgphnjokjhjlcnnajmfjlacjnjkhleah/js/btype.js"></script><script type="text/javascript" charset="utf-8" src="chrome-extension://jgphnjokjhjlcnnajmfjlacjnjkhleah/js/chrome.js"></script><style type="text/css">.noties{position:fixed;max-width:80%;z-index:9999}.noties:empty{display:none}.noties-top-right{right:0;top:20px}.noties-top-right .notie{transform:translateX(100%)}.noties-top-right .notie.notie-shown{transform:translateX(-20px)}.noties-top-left{left:0;top:20px}.noties-top-left .notie{transform:translateX(-100%)}.noties-top-left .notie.notie-shown{transform:translateX(20px)}.noties-bottom-right{right:0;bottom:20px}.noties-bottom-right .notie{transform:translateX(100%)}.noties-bottom-right .notie.notie-shown{transform:translateX(-20px)}.noties-bottom-left{left:0;bottom:20px}.noties-bottom-left .notie{transform:translateX(-100%)}.noties-bottom-left .notie.notie-shown{transform:translateX(20px)}.noties-top-center{left:50%;transform:translateX(-50%);top:0}.noties-top-center .notie{transform:translateY(-100%)}.noties-top-center .notie.notie-shown{transform:translateY(20px)}.noties-bottom-center{left:50%;transform:translateX(-50%);bottom:0}.noties-bottom-center .notie{transform:translateY(100%)}.noties-bottom-center .notie.notie-shown{transform:translateY(-20px)}.notie{background-color:#ddd;opacity:0;transition:transform .3s,opacity .3s;border:1px solid #ddd;font:14px/1.4 Helvetica,serif;word-wrap:break-word}.notie:not(:last-child){margin-bottom:10px}.notie.notie-auto-hide-disabled{cursor:pointer}.notie.notie-shown{opacity:1}.notie .notie-body{padding:10px 12px}.notie .notie-svg{height:23px;display:block;float:left}.notie .notie-text{display:block;padding-left:30px;padding-top:2px}.notie svg{height:23px;width:23px}.notie.notie-info{background-color:#c6e4f4;border-color:#a9d3eb;color:#477dac;a{color:#477dac}}.notie.notie-error{background-color:#eac1bd;border-color:#d7a9a6;color:#ab2925;a{color:#ab2925}}.notie.notie-success{background-color:#d9f1cf;border-color:#c8e1bf;color:#748c6c;a{color:#748c6c}}.notie.notie-warning{background-color:#f7f2cf;border-color:#e8e2b2;color:#9c7d45;a{color:#9c7d45}}</style></head>
+	<body id="blog" class="home blog logged-in admin-bar  customize-support">
+        		<div class="site-header container-fluid" style="background-image: url(http://dynet.wonzan.com/wp-content/themes/master-blog/img/bg.jpg)">
+	<div class="custom-header container">
+			<div class="site-heading text-center">
+        				<div class="site-branding-logo">
+									</div>
+				<div class="site-branding-text">
+											<h1 class="site-title"><a href="http://dynet.wonzan.com/" rel="home">DYBlog</a></h1>
+					
+											<p class="site-description">
+							DY的窝						</p>
+									</div><!-- .site-branding-text -->
+        			</div>
+	</div>
+</div>
+ 
+<div class="main-menu">
+	<nav id="site-navigation" class="navbar navbar-default navbar-center">     
+		<div class="container">   
+			<div class="navbar-header">
+							</div>
+			<div class="menu-container"><ul class="nav navbar-nav"><li><a href="http://dynet.wonzan.com/wp-admin/nav-menus.php" title="">添加一个菜单</a></li></ul></div>		</div>
+			</nav> 
+</div>
+
+<div class="container main-container" role="main">
+	<div class="page-area">
+		<!-- start content container -->
+<div class="row">
+
+		<div class="col-md-12">
+
+		            <div class="first-article">
+              <article class="news-item-content col-md-6">
+	<div class="post-23 post type-post status-publish format-standard hentry category-5">                    
+		<div class="news-item text-center">
+			<div class="news-text-wrap">
+				            	<span class="posted-date">
+		2020年1月10日	</span>
+	<span class="comments-meta">
+						<a href="http://dynet.wonzan.com/01/10/23/#respond" rel="nofollow" title="留下评论主题颜色更新">
+					0				</a>
+					<i class="fa fa-comments-o"></i>
+	</span>
+							<span class="author-meta">
+							<span class="author-meta-by">作者</span>
+							<a href="http://dynet.wonzan.com/author/dynet/">
+								DYNet							</a>
+						</span>	
+						<h2>
+							<a href="http://dynet.wonzan.com/01/10/23/">
+								&lt;迎新年&gt;主题颜色更新							</a>
+						</h2>
+						<div class="cat-links"><a href="http://dynet.wonzan.com/category/%e9%80%9a%e7%9f%a5/">通知</a></div>            						
+						<div class="post-excerpt">
+							<p>网站的主题颜色将会变为红色，强调颜色不变。</p>
+						</div><!-- .post-excerpt -->
+            <div class="read-more-button">
+    					<a href="http://dynet.wonzan.com/01/10/23/">
+    						阅读更多    					</a>
+    					
+    				</div><!-- .read-more-button -->
+				</div>
+			</div><!-- .news-item -->
+   </div>   
+</article>
+            </div>
+        <article class="news-item-content col-md-6">
+	<div class="post-14 post type-post status-publish format-standard hentry category-4">                    
+		<div class="news-item text-center">
+			<div class="news-text-wrap">
+				            	<span class="posted-date">
+		2019年11月9日	</span>
+	<span class="comments-meta">
+						<a href="http://dynet.wonzan.com/11/09/14/#comments" rel="nofollow" title="留下评论Hello World!">
+					8				</a>
+					<i class="fa fa-comments-o"></i>
+	</span>
+							<span class="author-meta">
+							<span class="author-meta-by">作者</span>
+							<a href="http://dynet.wonzan.com/author/dynet/">
+								DYNet							</a>
+						</span>	
+						<h2>
+							<a href="http://dynet.wonzan.com/11/09/14/">
+								Hello World!							</a>
+						</h2>
+						<div class="cat-links"><a href="http://dynet.wonzan.com/category/%e5%85%b6%e4%bb%96/">其他</a></div>            						
+						<div class="post-excerpt">
+							<p>不删了，做个纪念。</p>
+						</div><!-- .post-excerpt -->
+            <div class="read-more-button">
+    					<a href="http://dynet.wonzan.com/11/09/14/">
+    						阅读更多    					</a>
+    					
+    				</div><!-- .read-more-button -->
+				</div>
+			</div><!-- .news-item -->
+   </div>   
+</article>
+
+	</div>
+
+	
+</div>
+<!-- end content container -->
+
+</div><!-- end main-container -->
+</div><!-- end page-area -->
+ 
+<footer id="colophon" class="footer-credits container-fluid">
+	<div class="container">
+				<p class="footer-credits-text text-center">
+			自豪地采用 <a href="https://cn.wordpress.org/">WordPress</a>			<span class="sep"> | </span>
+			主题：<a href="http://headthemes.com/">Master Blog</a>		</p> 
+		 
+	</div>	
+</footer>
+ 
+<script> jQuery(document).ready(function($) { $("html,body").click(function(e){ var n=Math.round(Math.random()*100); var $i=$("<b/>").text("+"+n); var x=e.pageX,y=e.pageY; $i.css({ "z-index":99999, "top":y-20, "left":x, "position":"absolute", "color":"#E94F06" }); $("body").append($i); $i.animate( {"top":y-180,"opacity":0}, 1500, function(){$i.remove();}); e.stopPropagation();});}); </script><script>notie('您直接访问了本站!  莫非您记住了我的<strong>域名</strong>.厉害~  我倍感荣幸啊 嘿嘿', {type:'info', autoHide:true, timeout: 5000,width:200})</script><script>function plus_copyright(){document.body.addEventListener("copy", function (e) { if (window.getSelection().toString().length > 1) { setClipboardText(e); notie("商业转载请联系作者获得授权，非商业转载请注明出处", {type:"error", autoHide:true, timeout: 5000,width:200}); } }); function setClipboardText(event) { event.preventDefault(); var htmlData = "" + "著作权归作者所有。<br>" + "商业转载请联系作者获得授权，非商业转载请注明出处。<br>" + "作者：DYNet<br>" + "链接：" + window.location.href + "<br>" + "来源：DYBlog<br><br>" + window.getSelection().toString(); var textData = "" + "著作权归作者所有。\n" + "商业转载请联系作者获得授权，非商业转载请注明出处。\n" + "作者：DYNet\n" + "链接：" + window.location.href + "\n" + "来源：DYBlog\n\n" + window.getSelection().toString(); if (event.clipboardData) { event.clipboardData.setData("text/html", htmlData); event.clipboardData.setData("text/plain",textData); } else if (window.clipboardData) { return window.clipboardData.setData("text", textData); } }}</script><link rel="stylesheet" id="prismCSS-css" href="./DYBlog – DY的窝_files/plus_prism.css" type="text/css" media="all">
+<script type="text/javascript" src="./DYBlog – DY的窝_files/admin-bar.min.js.下载"></script>
+<script type="text/javascript" src="./DYBlog – DY的窝_files/nprogress.js.下载"></script>
+<script type="text/javascript" src="./DYBlog – DY的窝_files/global.js.下载"></script>
+<script type="text/javascript" src="./DYBlog – DY的窝_files/bootstrap.min.js.下载"></script>
+<script type="text/javascript" src="./DYBlog – DY的窝_files/customscript.js.下载"></script>
+<script type="text/javascript" src="./DYBlog – DY的窝_files/wp-embed.min.js.下载"></script>
+	<!--[if lte IE 8]>
+		<script type="text/javascript">
+			document.body.className = document.body.className.replace( /(^|\s)(no-)?customize-support(?=\s|$)/, '' ) + ' no-customize-support';
+		</script>
+	<![endif]-->
+	<!--[if gte IE 9]><!-->
+		<script type="text/javascript">
+			(function() {
+				var request, b = document.body, c = 'className', cs = 'customize-support', rcs = new RegExp('(^|\\s+)(no-)?'+cs+'(\\s+|$)');
+
+						request = true;
+		
+				b[c] = b[c].replace( rcs, ' ' );
+				// The customizer requires postMessage and CORS (if the site is cross domain)
+				b[c] += ( window.postMessage && request ? ' ' : ' no-' ) + cs;
+			}());
+		</script>
+	<!--<![endif]-->
+			<div id="wpadminbar" class="">
+							<a class="screen-reader-shortcut" href="http://dynet.wonzan.com/#wp-toolbar" tabindex="1">跳至工具栏</a>
+						<div class="quicklinks" id="wp-toolbar" role="navigation" aria-label="工具栏">
+				<ul id="wp-admin-bar-root-default" class="ab-top-menu"><li id="wp-admin-bar-wp-logo" class="menupop"><a class="ab-item" aria-haspopup="true" href="http://dynet.wonzan.com/wp-admin/about.php"><span class="ab-icon"></span><span class="screen-reader-text">关于WordPress</span></a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-wp-logo-default" class="ab-submenu"><li id="wp-admin-bar-about"><a class="ab-item" href="http://dynet.wonzan.com/wp-admin/about.php">关于WordPress</a></li></ul><ul id="wp-admin-bar-wp-logo-external" class="ab-sub-secondary ab-submenu"><li id="wp-admin-bar-wporg"><a class="ab-item" href="https://cn.wordpress.org/">WordPress.org</a></li><li id="wp-admin-bar-documentation"><a class="ab-item" href="https://codex.wordpress.org/">文档</a></li><li id="wp-admin-bar-support-forums"><a class="ab-item" href="http://zh-cn.forums.wordpress.org/">支持</a></li><li id="wp-admin-bar-feedback"><a class="ab-item" href="http://zh-cn.forums.wordpress.org/forum/suggestions">反馈</a></li></ul></div></li><li id="wp-admin-bar-site-name" class="menupop"><a class="ab-item" aria-haspopup="true" href="http://dynet.wonzan.com/wp-admin/">DYBlog</a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-site-name-default" class="ab-submenu"><li id="wp-admin-bar-dashboard"><a class="ab-item" href="http://dynet.wonzan.com/wp-admin/">仪表盘</a></li></ul><ul id="wp-admin-bar-appearance" class="ab-submenu"><li id="wp-admin-bar-themes"><a class="ab-item" href="http://dynet.wonzan.com/wp-admin/themes.php">主题</a></li><li id="wp-admin-bar-widgets"><a class="ab-item" href="http://dynet.wonzan.com/wp-admin/widgets.php">小工具</a></li><li id="wp-admin-bar-menus"><a class="ab-item" href="http://dynet.wonzan.com/wp-admin/nav-menus.php">菜单</a></li><li id="wp-admin-bar-background" class="hide-if-customize"><a class="ab-item" href="http://dynet.wonzan.com/wp-admin/themes.php?page=custom-background">背景</a></li><li id="wp-admin-bar-header" class="hide-if-customize"><a class="ab-item" href="http://dynet.wonzan.com/wp-admin/themes.php?page=custom-header">顶部</a></li></ul></div></li><li id="wp-admin-bar-customize" class="hide-if-no-customize"><a class="ab-item" href="http://dynet.wonzan.com/wp-admin/customize.php?url=http%3A%2F%2Fdynet.wonzan.com%2F">自定义</a></li><li id="wp-admin-bar-comments"><a class="ab-item" href="http://dynet.wonzan.com/wp-admin/edit-comments.php"><span class="ab-icon"></span><span class="ab-label awaiting-mod pending-count count-0" aria-hidden="true">0</span><span class="screen-reader-text comments-in-moderation-text">0条评论待审</span></a></li><li id="wp-admin-bar-new-content" class="menupop"><a class="ab-item" aria-haspopup="true" href="http://dynet.wonzan.com/wp-admin/post-new.php"><span class="ab-icon"></span><span class="ab-label">新建</span></a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-new-content-default" class="ab-submenu"><li id="wp-admin-bar-new-post"><a class="ab-item" href="http://dynet.wonzan.com/wp-admin/post-new.php">文章</a></li><li id="wp-admin-bar-new-media"><a class="ab-item" href="http://dynet.wonzan.com/wp-admin/media-new.php">媒体</a></li><li id="wp-admin-bar-new-page"><a class="ab-item" href="http://dynet.wonzan.com/wp-admin/post-new.php?post_type=page">页面</a></li><li id="wp-admin-bar-new-user"><a class="ab-item" href="http://dynet.wonzan.com/wp-admin/user-new.php">用户</a></li></ul></div></li><li id="wp-admin-bar-delete-cache"><a class="ab-item" href="http://dynet.wonzan.com/wp-admin/index.php?action=delcachepage&amp;path=%2F&amp;_wpnonce=f8046b4dfd" title="删除当前页面的缓存">删除缓存</a></li></ul><ul id="wp-admin-bar-top-secondary" class="ab-top-secondary ab-top-menu"><li id="wp-admin-bar-search" class="admin-bar-search"><div class="ab-item ab-empty-item" tabindex="-1"><form action="http://dynet.wonzan.com/" method="get" id="adminbarsearch"><input class="adminbar-input" name="s" id="adminbar-search" type="text" value="" maxlength="150"><label for="adminbar-search" class="screen-reader-text">搜索</label><input type="submit" class="adminbar-button" value="搜索"></form></div></li><li id="wp-admin-bar-my-account" class="menupop with-avatar"><a class="ab-item" aria-haspopup="true" href="http://dynet.wonzan.com/wp-admin/profile.php">嗨，<span class="display-name">DYNet</span><img alt="" src="./DYBlog – DY的窝_files/6e1e43cd68280297b442c6e7d12b7e45" srcset="http://gravatar.loli.net/avatar/6e1e43cd68280297b442c6e7d12b7e45?s=52&amp;d=monsterid&amp;r=g 2x" class="avatar avatar-26 photo" height="26" width="26"></a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-user-actions" class="ab-submenu"><li id="wp-admin-bar-user-info"><a class="ab-item" tabindex="-1" href="http://dynet.wonzan.com/wp-admin/profile.php"><img alt="" src="./DYBlog – DY的窝_files/6e1e43cd68280297b442c6e7d12b7e45(1)" srcset="http://gravatar.loli.net/avatar/6e1e43cd68280297b442c6e7d12b7e45?s=128&amp;d=monsterid&amp;r=g 2x" class="avatar avatar-64 photo" height="64" width="64"><span class="display-name">DYNet</span></a></li><li id="wp-admin-bar-edit-profile"><a class="ab-item" href="http://dynet.wonzan.com/wp-admin/profile.php">编辑我的个人资料</a></li><li id="wp-admin-bar-logout"><a class="ab-item" href="http://dynet.wonzan.com/wp-login.php?action=logout&amp;_wpnonce=2a55684916">注销</a></li></ul></div></li></ul>			</div>
+						<a class="screen-reader-shortcut" href="http://dynet.wonzan.com/wp-login.php?action=logout&amp;_wpnonce=2a55684916">注销</a>
+					</div>
+
+		
+
+
+<div style="text-align: center;"><div style="position:relative; top:0; margin-right:auto;margin-left:auto; z-index:99999">
+<a href="http://www.wonzan.com/" target="_blank">wonzan.com</a>
+</div></div>
+
+
+<!-- Dynamic page generated in 0.262 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2020-07-09 07:12:52 -->
+
+<!-- Super Cache dynamic page detected but late init not set. See the readme.txt for further details. -->
+<!-- Dynamic WPCache Super Cache --></body></html>
